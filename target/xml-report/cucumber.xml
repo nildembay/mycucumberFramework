@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="320.854">
+<testcase classname="US1001_amazon_search" name="TC01 amazon arama testi" time="53.641">
+<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+And iphone icin arama yapar.................................................passed
+Then sonucun iphone icerdigini test eder....................................passed
+Given kullanici amazon anasayfaya gider.....................................passed
+And teapot icin arama yapar.................................................passed
+Then sonucun teapot icerdigini test eder....................................passed
+Given kullanici amazon anasayfaya gider.....................................passed
+And flower icin arama yapar.................................................passed
+Then sonucun flower icerdigini test eder....................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002_amazon_search_background" name="TC02_amazon_iphone_arama_testi" time="34.909">
+<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+And iphone icin arama yapar.................................................passed
+Then sonucun iphone icerdigini test eder....................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002_amazon_search_background" name="TC03_amazon_teapot_arama_testi" time="37.574">
+<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+And teapot icin arama yapar.................................................passed
+Then sonucun teapot icerdigini test eder....................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002_amazon_search_background" name="TC04_amazon_flower_arama_testi" time="36.866">
+<system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+And flower icin arama yapar.................................................passed
+Then sonucun flower icerdigini test eder....................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003_amazon_search_parametreli" name="TC05_parametre-kullanma" time="27.418">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+And "teapot" icin arama yapar...............................................passed
+Then sonucun "hasan" icerdigini test eder...................................failed
+And kullanici sayfayi kapatir...............................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.AmazonStepDefinitions.sonucun_icerdigini_test_eder(AmazonStepDefinitions.java:60)
+	at ✽.sonucun "hasan" icerdigini test eder(file:///C:/Users/niluf/mycucumberframework/src/test/resources/features/US1003_amazon_search_parametreli.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama" time="34.033">
+<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
+Then "yasin" icin arama yapar...............................................passed
+And sonucun "yasin" icerdigini test eder....................................passed
+Then kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_2" time="38.307">
+<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
+Then "samsung" icin arama yapar.............................................passed
+And sonucun "samsung" icerdigini test eder..................................passed
+Then kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_3" time="28.675">
+<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
+Then "headphone" icin arama yapar...........................................passed
+And sonucun "headphone" icerdigini test eder................................passed
+Then kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004_amazon_search_scenario_outline" name="TC06_coklu_arama_4" time="28.246">
+<system-out><![CDATA[When kullanici amazon anasayfaya gider......................................passed
+Then "pencil" icin arama yapar..............................................passed
+And sonucun "pencil" icerdigini test eder...................................passed
+Then kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

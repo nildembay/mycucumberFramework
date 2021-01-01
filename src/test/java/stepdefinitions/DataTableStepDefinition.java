@@ -61,18 +61,21 @@ DataTablesPage dataTablesPage=new DataTablesPage();
 
     @When("kullanici ilk isim ile arama yapar {string}")
     public void kullaniciIlkIsimIleAramaYapar(String string) {
+
         dataTablesPage.searchTextBox.sendKeys(string);
     }
 
 
-    @Then("isim bolumunde isminin oldugunu dogrular {string}")
-    public void isimBolumundeIsmininOldugunuDogrular(String string) {
-        Assert.assertTrue(dataTablesPage.resultRow.getText().contains(string));
-    }
+
 
     @And("{string} saniye bekler")
     public void saniyeBekler(String arg0) throws InterruptedException {
         int sure=Integer.parseInt(arg0);
         Thread.sleep(sure*1000);
+    }
+
+    @Then("isim bolumunde isminin oldugunu dogrular {string}")
+    public void isimBolumundeIsmininOldugunuDogrular(String arg0) {
+        Assert.assertTrue(dataTablesPage.ilkAramaSonucu.getText().contains(arg0));
     }
 }

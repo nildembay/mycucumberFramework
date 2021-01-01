@@ -1,5 +1,5 @@
 Feature: US1001_amazon_search
-  @amazonarama
+  @amazon
   Scenario: TC01 amazon arama testi
     Given kullanici amazon anasayfaya gider
     And iphone icin arama yapar

@@ -40,8 +40,8 @@ public class DataTablesPage {
     @FindBy(xpath = "//input[@type='search']")
     public WebElement searchTextBox;
 
-    @FindBy(xpath = "//td[@class='sorting_1']")
-    public WebElement resultRow;
+    @FindBy(xpath = "(//td[@class='sorting_1'])[1]")
+    public WebElement ilkAramaSonucu;
 
 
 }

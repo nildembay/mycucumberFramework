@@ -1,5 +1,5 @@
 Feature: US1006_Dinamik_url_test.feature
-
+  @smoke
   Scenario: TC08_yazilan_her_url’e_gitmeli
 
   Given kullanici "bestbuy_url" anasayfaya gider

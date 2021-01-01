@@ -7,7 +7,7 @@
 #When kullanici ilk isim ile arama yapar
 #Then isim bolumunde isminin oldugunu dogrular
 Feature: US1007_kullanici_data_ekleyebilmeli
- @wip
+ @rapor  @smoke
   Scenario Outline: TC009_5_farkli_kisi_ile_Farkli_kombinasyonlar_calismali
     When kullanici "datatables_url" anasayfaya gider
     Then new butonuna basar
@@ -22,9 +22,10 @@ Feature: US1007_kullanici_data_ekleyebilmeli
     And Create tusuna basar
     When kullanici ilk isim ile arama yapar "<firstname>"
     Then isim bolumunde isminin oldugunu dogrular "<firstname>"
+
+
     Examples:
       | firstname | lastname | postion | office | extention | start | Salary |
-      | firstname | lastname | position | office | extention | date | salary |
       |mehmet     |bulut     |teacher  |ankara  |---        |2020-12-10|1000|
       |yasin      |kaya      |manager  |ankara  |--         |2020-10-15|10000|
       |cevat      |fehmi     |tester   |istanbul|Dr         |2020-05-15|12500000|

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="356.11">
+<testcase classname="US1005_Walmart_parameter_arama.feature" name="TC07_aranan_kelime_title’da_olmali" time="41.246">
+<system-out><![CDATA[When kullanici walmart anasayfaya gider.....................................passed
+Then walmart sayfasinda"Nutella" icin arama yapar...........................passed
+And walmart sayfa basliginin "Nutella" icerdigini test eder.................passed
+Then kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005_Walmart_parameter_arama.feature" name="TC07_aranan_kelime_title’da_olmali_2" time="47.816">
+<system-out><![CDATA[When kullanici walmart anasayfaya gider.....................................passed
+Then walmart sayfasinda"pencil" icin arama yapar............................passed
+And walmart sayfa basliginin "pencil" icerdigini test eder..................passed
+Then kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005_Walmart_parameter_arama.feature" name="TC07_aranan_kelime_title’da_olmali_3" time="40.847">
+<system-out><![CDATA[When kullanici walmart anasayfaya gider.....................................passed
+Then walmart sayfasinda"milk" icin arama yapar..............................passed
+And walmart sayfa basliginin "milk" icerdigini test eder....................passed
+Then kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005_Walmart_parameter_arama.feature" name="TC07_aranan_kelime_title’da_olmali_4" time="37.8">
+<system-out><![CDATA[When kullanici walmart anasayfaya gider.....................................passed
+Then walmart sayfasinda"domatoes" icin arama yapar..........................passed
+And walmart sayfa basliginin "domatoes" icerdigini test eder................passed
+Then kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005_Walmart_parameter_arama.feature" name="TC07_aranan_kelime_title’da_olmali_5" time="34.635">
+<system-out><![CDATA[When kullanici walmart anasayfaya gider.....................................passed
+Then walmart sayfasinda"popcorn" icin arama yapar...........................passed
+And walmart sayfa basliginin "popcorn" icerdigini test eder.................passed
+Then kullanici sayfayi kapatir..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006_Dinamik_url_test.feature" name="TC08_yazilan_her_url’e_gitmeli" time="10.726">
+<system-out><![CDATA[Given kullanici "bestbuy_url" anasayfaya gider..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1007_kullanici_data_ekleyebilmeli" name="TC009_5_farkli_kisi_ile_Farkli_kombinasyonlar_calismali" time="14.337">
+<system-out><![CDATA[When kullanici "datatables_url" anasayfaya gider............................passed
+Then new butonuna basar.....................................................passed
+And first name girer "mehmet"...............................................passed
+And "1" saniye bekler.......................................................passed
+Then last name girer "bulut"................................................passed
+And postion girer "teacher".................................................passed
+And office girer "ankara"...................................................passed
+And extention girer "---"...................................................passed
+And start date girer "2020-12-10"...........................................passed
+And Salary girer "1000".....................................................passed
+And Create tusuna basar.....................................................passed
+When kullanici ilk isim ile arama yapar "mehmet"............................passed
+Then isim bolumunde isminin oldugunu dogrular "mehmet"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1007_kullanici_data_ekleyebilmeli" name="TC009_5_farkli_kisi_ile_Farkli_kombinasyonlar_calismali_2" time="16.521">
+<system-out><![CDATA[When kullanici "datatables_url" anasayfaya gider............................passed
+Then new butonuna basar.....................................................passed
+And first name girer "yasin"................................................passed
+And "1" saniye bekler.......................................................passed
+Then last name girer "kaya".................................................passed
+And postion girer "manager".................................................passed
+And office girer "ankara"...................................................passed
+And extention girer "--"....................................................passed
+And start date girer "2020-10-15"...........................................passed
+And Salary girer "10000"....................................................passed
+And Create tusuna basar.....................................................passed
+When kullanici ilk isim ile arama yapar "yasin".............................passed
+Then isim bolumunde isminin oldugunu dogrular "yasin".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1007_kullanici_data_ekleyebilmeli" name="TC009_5_farkli_kisi_ile_Farkli_kombinasyonlar_calismali_3" time="14.11">
+<system-out><![CDATA[When kullanici "datatables_url" anasayfaya gider............................passed
+Then new butonuna basar.....................................................passed
+And first name girer "cevat"................................................passed
+And "1" saniye bekler.......................................................passed
+Then last name girer "fehmi"................................................passed
+And postion girer "tester"..................................................passed
+And office girer "istanbul".................................................passed
+And extention girer "Dr"....................................................passed
+And start date girer "2020-05-15"...........................................passed
+And Salary girer "12500000".................................................passed
+And Create tusuna basar.....................................................passed
+When kullanici ilk isim ile arama yapar "cevat".............................passed
+Then isim bolumunde isminin oldugunu dogrular "cevat".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1007_kullanici_data_ekleyebilmeli" name="TC009_5_farkli_kisi_ile_Farkli_kombinasyonlar_calismali_4" time="14.045">
+<system-out><![CDATA[When kullanici "datatables_url" anasayfaya gider............................passed
+Then new butonuna basar.....................................................passed
+And first name girer "adnan"................................................passed
+And "1" saniye bekler.......................................................passed
+Then last name girer "calis"................................................passed
+And postion girer "QA lead".................................................passed
+And office girer "berlin"...................................................passed
+And extention girer "Master"................................................passed
+And start date girer "2020-03-16"...........................................passed
+And Salary girer "-25000"...................................................passed
+And Create tusuna basar.....................................................passed
+When kullanici ilk isim ile arama yapar "adnan".............................passed
+Then isim bolumunde isminin oldugunu dogrular "adnan".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1007_kullanici_data_ekleyebilmeli" name="TC009_5_farkli_kisi_ile_Farkli_kombinasyonlar_calismali_5" time="14.906">
+<system-out><![CDATA[When kullanici "datatables_url" anasayfaya gider............................passed
+Then new butonuna basar.....................................................passed
+And first name girer "selin"................................................passed
+And "1" saniye bekler.......................................................passed
+Then last name girer "gul"..................................................passed
+And postion girer "Manuel tester"...........................................passed
+And office girer "munih"....................................................passed
+And extention girer "--"....................................................passed
+And start date girer "2020-12-12"...........................................passed
+And Salary girer "1256125"..................................................passed
+And Create tusuna basar.....................................................passed
+When kullanici ilk isim ile arama yapar "selin".............................passed
+Then isim bolumunde isminin oldugunu dogrular "selin".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unknown" name="TC10 kullanici gecerli bilgilerle giris yapar" time="43.85">
+<system-out><![CDATA[Given kullanici "Ck_Hotels_Url" anasayfaya gider............................passed
+Then Log in yazisina tiklar.................................................passed
+And gecerli username girer..................................................passed
+And gecerli password girer..................................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yaptigini kontrol eder...................................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1009 Ck Hotels Log" name="TC11 kullanici gecersiz bilgilerle giris yapamaz" time="24.124">
+<system-out><![CDATA[Given kullanici "Ck_Hotels_Url" anasayfaya gider............................passed
+Then Log in yazisina tiklar.................................................passed
+And gecersiz username girer.................................................passed
+And gecersiz password girer.................................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yapilamadigini kontrol eder..............................passed
+And kullanici sayfayi kapatir...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
